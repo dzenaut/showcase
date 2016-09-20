@@ -1,0 +1,2 @@
+This is a practice document to recall how to work with text files.
+I hope this works out.
