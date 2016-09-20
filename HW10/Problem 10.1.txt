@@ -1,0 +1,17 @@
+Problem 10.1
+
+1. any valid binary number
+
+1[10]*|0
+
+2. any even decimal number (including 0 as an even number)
+
+[1-9]*[24680]
+
+3. any comma-separated sequence of increasing (decimal) digits starting with a 0 (e.g.0,3,4,6,9, 0,3,5,9, and 0, but not 0,3,1 or 0,2,2)
+
+0(,1)?(,2)?(,3)?(,4)?(,5)?(,6)?(,7)?(,8)?(,9)?
+
+4. wrong usage of a/an (e.g. a apple and an banana, but not an apple or banana shake).It is okay, if you restrict it to cases when a is followed by a vowel and an is followed by a consonant, i.e. it’s okay if you also match a university.
+
+a\s[aeiou][a-z]*|an\s[^aeiou][a-z]*

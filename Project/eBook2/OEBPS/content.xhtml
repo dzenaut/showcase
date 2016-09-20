@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      xmlns:epub="http://www.idpf.org/2007/ops">
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet1.css"/>
+        <title>About Ebooks</title>
+    </head>
+    <body>
+        <section epub:type="chapter" id="item10">
+          <h3 class="chheading">Content</h3>
+          <h3>Skeleton</h3>
+          <p>Before you should start writing the content of the Ebook, it is best to create a skeleton of a functional Ebook. This skeleton should contain a functional mimetype file that declares that the files in the folder constitute an Ebook. There should be a folder called <span class="monospace">META-INF</span> that contains the <span class="monospace">container.xml</span> file. Another requirement is the content.opf file in the <span class="monospace">OEBPS</span> folder. This folder contains all the files that have content (e.g. xhtml files or pictures) or carry information about the style of the information (stylesheets). Every file that is in the <span class="monospace">OEBPS</span> folder have to be listed in the manifest of the <span class="monospace">content.opf</span> file. Further, all the content files have to be listed in the spine of the content.opf folder. They have to be listed in the right order. Then, it also helps to already prepare a file <span class="monospace">toc.xhtml</span> that will contain the table of contents.</p>
+          <h3>Adding Content</h3>
+          <p>Every file that has content will have to be added to the manifest and the spine of the <span class="monospace">content.opf</span> file. Further, the files will have to be added as a li element in the ol of <span class="monospace">toc.xhtml</span> if they are supposed to show up in the table of contents.</p>
+          <h3>Titlepage</h3>
+          <p>The titlepage is made up of a picture and the title (and subtitle) in most Ebooks. The picture that has to be included will have to be listed in the manifest and spine of the <span class="monospace">content.opf</span> file as well. It is important to center the images and put them in a container div. If pictures are not in container divs, they will not stretch according to the size of the window. The picture, the title and the subtitle all have to be part of the same div if you want to give them a common background color. In order to avoid page breaks in the title page, it is smart to set the attribute <span class="monospace">"page-break-inside"</span> to <span class="monospace">"avoid"</span> in the css file that describes the container div. You should also force a page break after the subtitle by setting the attribute <span class="monospace">"page-break-after"</span> to <span class="monospace">"always"</span> in the stylesheet.</p>
+          <h3>Dedication</h3>
+          <p>The dedication should be centered in the perfect middle of the page. For that, the text has to be centered horizontally by setting <span class="monospace">"text-align"</span> to <span class="monospace">"center"</span> in the stylesheet. For vertical centering, the <span class="monospace">"line-height"</span> has to be set to 200px, and -after setting <span class="monospace">"margin"</span> to <span class="monospace">"auto"</span>- the <span class="monospace">"margin-top"</span> has to be set to -100px (half ot the "line height"). Then, <span class="monospace">"top"</span> and <span class="monospace">"width"</span> have to be set to 50% and 100% respectively. The style of the text can be changed as pleased, in our case it was simply changed to italics.</p>
+          <h3>Table of Contents and List of Illustrations</h3>
+          <p>Simply create an ordered list in a nav element with the id <span class="monospace">"pub-toc"</span> (<span class="monospace">"loi"</span> for List of Illustrations), in which links to the content that is to be listed in the table of contents are added in the required order.</p>
+          <h3>Acknowledgements, Preface, Chapters</h3>
+          <p>Basically all function in the same way and share the same features. In our Ebook, we chose to have different headlines for chapters and the acknowledgments and preface, but that is up to the author of the Ebook and easily manipulated by CSS. The margins between the paragraphs were decreased for better readability. Quotes were introduced, by simply putting the text of the quotes into a div environment. The div has padding, so that the rounded borders that were drawn around the div do not interfere with the letters of the quote. By using span, very big quotation marks were put around the quotes. The font of the quotes was in italics. Images are, again, in a container div, so that they stretch with the window and centered. Captions are centered and in slightly smaller italic font.</p>
+          <h3>Glossary</h3>
+          <p>For better readability, we increased the margins between paragraphs in the glossary, because you usually do not want to read the whole page, only one word and its explanation are of interest. That is why they should be spatially separated from other words and their explanations in the glossary. Different text styles of the word and its explanation are created by using spans with different classes. The design of these classes can be manipulated as desired in CSS.</p>
+          <h3>Colophon</h3>
+          <p>In the colophon, the text should not fill out the whole page, but only a narrow block. In order to achieve this, the <span class="monospace">"width"</span> of the paragraph simply had to be set to <span class="monospace">"12em"</span> in CSS, and the margins had to be set to <span class="monospace">"auto"</span>. It is also important to specify that the text has to be aligned in the center. The image also has to be centered and, again, is placed inside a container div.</p>
+          <h3>Page Breaks</h3>
+          <p>For clearer page breaks, page breaks are forced or prevented in the following positions:</p>
+          <ul>
+            <li>No page breaks inside container divs</li>
+            <li>Page break after the subtitle</li>
+            <li>Page Breaks before headings with the class <span class="monospace">"heading"</span></li>
+            <li>Page Breaks before images with the class <span class="monospace">"centeredimg"</span></li>
+            <li>No page breaks inside divs that contain quotes</li>
+            <li>Page breaks before chapter headings</li>
+            <li>Page breaks after captions of images</li>
+          </ul>
+
+        </section>
+    </body>
+</html>

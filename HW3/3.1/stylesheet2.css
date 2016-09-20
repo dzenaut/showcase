@@ -1,0 +1,15 @@
+table {
+    font-size: 20pt;
+}
+
+.title {
+    font-weight:bold;
+}
+
+.prime {
+    background-color:#de9d87;
+}
+
+.even {
+    background-color:#beada7;
+}

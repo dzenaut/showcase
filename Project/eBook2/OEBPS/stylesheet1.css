@@ -1,0 +1,129 @@
+.monospace {
+    font-family:monospace;
+    color:blue;
+    font-size:1em;
+}
+
+h3 {
+    page-break-after:avoid;
+}
+
+.container {
+    page-break-inside:avoid;
+}
+
+#title {
+    left: 0;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -100px;
+    text-align:center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-style:bold;
+    font-size:2em;
+}
+
+.heading {
+    font-align:left;
+    text-decoration:underline;
+    page-break-before:always;
+}
+
+.image {
+   width: 100%; /* for IE 6 */
+   height: 100%;
+}
+
+p {
+    margin:1pt;
+}
+
+#dedication {
+    left: 0;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -100px;
+    text-align:center;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-style:italic;
+    font-size:1em;
+}
+
+.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
+    color:#0066cc;
+    text-align:center;
+}
+
+.centeredimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    page-break-before:always;
+    width:100%;
+}
+
+.centeredimgcol {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#jublogo {
+    width:50%;
+    height:50%;
+}
+
+.quote {
+    font-style:italic;
+}
+
+span {
+    font-size:1.3em;
+}
+
+.quotediv {
+    border:1px solid black;
+    border-radius:10px ;
+    padding:10px;
+    page-break-inside:avoid;
+}
+
+.chheading {
+    font-align:left;
+    text-decoration:underline;
+    color:#0066cc;
+    page-break-before:always;
+}
+
+.captiondiv {
+    padding:10px;
+    page-break-after:always;
+}
+
+.caption {
+    text-align:center;
+    font-size:10;
+    font-style:italic;
+}
+
+.word {
+    font-style:bold;
+    font-size:1.2em;
+}
+
+.match {
+    font-style:italic;
+    font-size:1em;
+}
+
+.glossp {
+    margin:10pt;
+}
+

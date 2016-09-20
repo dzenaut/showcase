@@ -1,0 +1,35 @@
+.description {
+    font-style:italic;
+}
+
+.title {
+    font-size:16pt;
+}
+
+.inverted > .title {
+    font-size:12pt;
+}
+
+.inverted > .description {
+    font-size:16pt;
+}
+
+.normal > .title {
+    color:blue;
+}
+
+.gray > .title {
+    color:gray;
+}
+
+.gray > img {
+    /* use both filter variants so that it is functional in all browsers */
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.inverted > img {
+    /* use both filter variants so that it is functional in all browsers */
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}

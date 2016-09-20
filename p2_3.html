@@ -1,0 +1,100 @@
+<!-- Defines the document type -->
+<!DOCTYPE html>
+<!-- Everything betweeen the html tags is to be interpreted as html -->
+<html>
+
+<!-- head of the document, does not have content, only information about the page, like its title and style (includes CSS into the coument) -->
+<head>
+    <!-- CSS component of the document. Defines styles of certain elements on the page -->
+    <style>
+        /* Define style of borders for the table */
+        table, th, td {border:1px solid black;
+            border-collapse:collapse;}
+        /* Define padding around the cells of the table (includes header cells and normal cells) */
+        th, td {padding:10px;}
+        /* Make the font size of the table caption a tiny bit smaller, 80 per cent of the screen's standard size */
+        caption {font-size:0.8em;}
+    </style>
+    <title>DNA Encoding</title>
+</head>
+
+<!-- Body of the page, actually contains the content -->
+<body>
+<!-- Major heading -->
+<h1>DNA Encoding</h1>
+<!-- Short descriptive paragraph -->
+<p>DNA encodes the genetic information of every organism and vastly influences who we grow up to be. Genetic information is stored in the form of DNA bases -encorporated into nucleotides - that polymerize to form DNA strands. The bases are: </p>
+<!-- Unordered list -->
+<ul>
+    <!-- Add elements to the list -->
+    <li>G (Guanine)</li>
+    <li>A (Adenine)</li>
+    <li>T (Thymine)</li>
+    <li>C (Cytosine)</li>
+</ul>
+
+<!-- Short descriptive paragraph -->
+<p>The DNA bases can be encoded by 1s and 0s.</p>
+
+<!-- Start table -->
+<table>
+    <!-- Start table head -->
+    <thead>
+        <!-- Caption for the tbale -->
+        <caption>Table 1: Nucleobase Encoding Scheme</caption>
+        <!-- Cells of the header -->
+        <tr>
+            <th><strong>Nucleobase</strong></th>
+            <th><strong>Encoding</strong></th>
+        </tr>
+    </thead>
+    <!-- Start the table body -->
+    <tbody>
+        <!-- Cells for the table -->
+        <tr>
+            <td>Guanine</td>
+            <td>00</td>
+        </tr>
+        <tr>
+            <td>Adenine</td>
+            <td>01</td>
+        </tr>
+        <tr>
+            <td>Thymine</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Cytosine</td>
+            <td>11</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+
+<!-- Make the DNA logo in blue -->
+<svg width=400 height = 400>
+    <!-- D -->
+    <line x1="0" y1="0" x2="0" y2="200" stroke="blue" stroke-width="2"/>
+    <line x1="0" y1="0" x2="100" y2="100" stroke="blue" stroke-width="2"/>
+    <line x1="100" y1="100" x2="0" y2="200" stroke="blue" stroke-width="2"/>
+    <!-- N -->
+    <line x1="150" y1="100" x2="150" y2="300" stroke="blue" stroke-width="2"/>
+    <line x1="150" y1="100" x2="250" y2="300" stroke="blue" stroke-width="2"/>
+    <line x1="250" y1="300" x2="250" y2="100" stroke="blue" stroke-width="2"/>
+    <!-- A -->
+    <line x1="350" y1="200" x2="300" y2="400" stroke="blue" stroke-width="2"/>
+    <line x1="350" y1="200" x2="400" y2="400" stroke="blue" stroke-width="2"/>
+    <line x1="325" y1="300" x2="375" y2="300" stroke="blue" stroke-width="2"/>
+</svg>
+
+<!-- Smaller caption for the references -->
+<h2>References</h2>
+    <!-- a tag allows to link text between its opening and closing tag to be linked to whatever is set to href -->
+    <a href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite">https://de.wikipedia.org</a> <!-- br allows line breaks --> <br>
+    <a href="http://www.ncbi.nlm.nih.gov/pubmed">http://www.ncbi.nlm.nih.gov/pubmed</a><br>
+    <a href="https://www.google.de/">https://www.google.de/</a>
+
+</body>
+
+
+</html>

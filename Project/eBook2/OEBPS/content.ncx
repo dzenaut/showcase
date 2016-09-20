@@ -1,0 +1,23 @@
+  <?xml version="1.0" encoding="UTF-8"?>
+  <ncx
+    xmlns="http://www.daisy.org/z3986/2005/ncx/"
+    version="2005-1"
+    xml:lang="en">
+    <head>
+      <meta name="dtb:uid" content="6f2e78a1-c4f3-4895-b58b-347f92fb2d11"/>
+    </head>
+    <docTitle>
+      <text>About Ebooks</text>
+    </docTitle>
+    <docAuthor>
+      <text>Dennis Ledwon</text>
+    </docAuthor>
+    <navMap>
+      <navPoint playOrder="1" id="id_01">
+        <navLabel>
+          <text>About Ebooks</text>
+        </navLabel>
+        <content src="content.xhtml"/>
+      </navPoint>
+    </navMap>
+  </ncx>

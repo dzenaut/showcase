@@ -1,0 +1,6 @@
+The eBook looks the same in two of the eBook readers (on computers). However, the appearance of the eBook changes drastically when the window is resized.
+This could be alleviated by including responsive design into the stylesheet1.css file of the epub, which could not be realized till now, but could be improved in the second version.
+
+In the third eBook reader, CSS information does not seem to be registered. The eBook basically looks like a collection of html files without css information. We assume that there is a bug with the eBook reader (or it requires features that our eBook does not take into account or vice versa).
+
+For now, there are no changes (other than the responsive design) that could be included to improve the readability over a range of eBook readers. However, we are happy to listen to feedback and include new features in the epub files.

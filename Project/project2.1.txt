@@ -1,0 +1,84 @@
+Title: Functioning Skeleton
+
+Description: Add a functioning skeleton for the eBook. It should contain the folder META-INF with container.xml, a mimetype file, and an OEBPS folder with a content.xhtml file, content.ncx file, nav.xhtml file and content.opf file. To this skeleton, all the other files will be added later
+
+Milestone: 27th of April, 2016
+
+
+Title: Titlepage
+
+Descritption: First, create two files titlepage.xhtml and stylesheet.css and include them into the structure of the eBook by adding them to the manifest of content.opf. titlepage.xhtml will also have to be added to the spine to be viewed (This will also have to be done for all of the following: chapters, acknowledgements, dedication, foreword, colophon). Fill the tilepage.xhtml file with a picture of Elon Musk and the title of the book "Elon Musk - Innovation For a Greener Future". Make the file stylesheet1.css to specify the style of the title page (stylesheet1.css will now contain all of the syling information for all of the following content).
+
+Milestone: 28th of April, 2016
+
+
+Title: Acknowledgments
+
+Description: Add acknowledgments.xhtml (general procedure described above for titlepage.xhtml). Acknowledgments should have an underlined and left-aligned heading. The color of the caption will be black. Otherwise, the acknowledgments will be plain text.
+
+Milestone: 29th of April, 2016
+
+
+Title: Small margins around paragraphs in content.xhtml files
+
+Description: Paragraphs should not disrupt the reader in content.xhtml files, the margin between two paragraphs should be visible, but very small (around 1pt) to see that a new thought in the book was started, but not to be exhausting for the eyes. Specify margins for paragraphs in stylesheet1.css
+
+Milestone: 30th of April, 2016
+
+
+Title: Dedication
+
+Description: Add dedication.xhtml (general procedure described above for titlepage.xhtml). The text of the dedication should be in italic and it should be in the perfect center of the page.
+
+Milestone: 1st of May, 2016
+
+
+Title: Colophon
+
+Description: Add colophon.xhtml (general procedure described above for titlepage.xhtml). The text of the colophon should not fill the entire width of the page, but be in a slimmer block. The text of the colophon should be in blue. There should be generous space between the text of the colophon and the upper page border. The Jacobs University logo should be below the colophon text. The picture of the logo has to be added to the manifest of content.opf
+
+Milestone: 2nd of May, 2016
+
+
+Title: Foreword
+
+Description: Add foreword.xhtml (general procedure described above for titlepage.xhtml). Same as acknowledgments above.
+
+Milestone: 3rd of May, 2016
+
+
+Title: Table of Contents
+
+Description: Add toc.xhtml (general procedure described above for titlepage.xhtml). Add a table of contents that lists the acknowldgments, foreword, chapters (to be added later), colophon and glossary. Elements in the table of contents should be blue and link to the beginning of the respective element. Elements in the TOC should be numbered. The table of contents should be behind the dedication, but in front of the acknowledgments.
+
+Milestone: 4th of May, 2016
+
+
+Title: Chapters
+
+Description: Add chapterx.xhtml (general procedure described above for titlepage.xhtml). Chapters should have a heading in the style: "Chapter X: xxxxx". The heading should be underlined and blue. It is left-aligned. Quotes and pictures can be added in chapters. Quotes should have margins at the bottom, should be in italic and should have big quotation marks at the beginning and the end. Images should be centered and have captions in italic that are a bit smaller than the rest of the text in the chapters.
+
+Milestone: 5th of May, 2016
+
+
+Title: Glossary
+
+Description: Add glossary.xhtml (general procedure described above for titlepage.xhtml). Glossary should be in the format "TERM: Explanation" The term will be in bold, and the Explanation in italics. The TERM will have a bigger font-size to be visible immediately. The margins of the paragraphs will be increased again to get the list-like appearance between paragraphs that was abided for the chapters for the sake of readability.
+
+Milestones: 6th of May, 2016
+
+
+Title: List of Illustrations
+
+Description: Like table of contents, but links should leading to the pictures in the chapters. Elements will have the format: "Picture X: xxxxxx", styling will be according to the rules described for TOC.
+
+Milestone: 7th of May, 2016
+
+
+Title: Proofread
+
+Description: Remove typos
+
+Milestone: 8th of May, 2016
+
+

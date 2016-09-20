@@ -1,0 +1,34 @@
+table {
+    font-size: 11pt;
+}
+
+.title {
+    font-weight:bold;
+}
+
+.prime {
+    background-color:#d5dad2;
+}
+
+.even {
+    background-color:#97b884;
+}
+
+@media (min-width: 600px) {
+    table {
+        font-size: 20pt;
+    }
+
+    .title {
+        font-weight:bold;
+    }
+
+    .prime {
+        background-color:#de9d87;
+    }
+
+    .even {
+        background-color:#beada7;
+    }
+
+}

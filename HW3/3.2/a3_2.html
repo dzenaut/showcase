@@ -1,0 +1,106 @@
+<html>
+    <style type="text/css">
+    .card {
+        /* So that I can use absolute positioning */
+        position:relative;
+        /* Don’t change these */
+        float: left;
+        box-sizing: border-box;
+        /* Feel free to play around with these */
+        text-align: center;
+        border-style: double;
+        border-width: 3px;
+        /* Change the color */
+        background: #84a0d7;
+        line-height: 100px;
+        height: 100px;
+        /* Change the width to get a different layout */
+        width: 33.33%;
+
+    }
+
+    .comment {
+        font-size:9pt;
+        /* Change the style a bit */
+        color:white;
+        font-family:Verdana;
+        line-height:normal;
+        position:absolute;
+        height:auto;
+        top:0;
+        text-align:left;
+        width: 100%;
+
+    }
+
+    @media (max-width:800px) {
+        .card {
+            width:50%;
+        }
+
+    }
+
+    @media (max-width:400px) {
+        .card {
+            width:100%;
+        }
+    }
+
+    </style>
+    <head>
+        <!--I want to display German characters in Özil and Müller -->
+        <meta charset="UTF-8">
+        <title>Football: Greatest Players</title>
+    </head>
+    <body style="margin:0px">
+        <h1>Best Football Players</h1>
+        <div class="card">
+            Messi
+            <div class="comment">Undoubtedly the best in the world and most likely of all times (Sorry, Ronaldo fans)</div>
+        </div>
+        <div class="card">
+            Ronaldo
+            <div class="comment">Still a king</div>
+        </div>
+        <div class="card">
+        Neymar
+            <div class="comment">Will most likely be the best player of the world after Messi and Ronaldo retire</div>
+        </div>
+        <div class="card">
+        Suarez
+            <div class="comment">Despicable, but incredibly good</div>
+        </div>
+        <div class="card">
+        James
+            <div class="comment">Insane World Cup</div>
+        </div>
+        <div class="card">
+        Robben
+            <div class="comment">Like Suarez</div>
+        </div>
+        <div class="card">
+        Özil
+            <div class="comment">One of the best playmakers in the world</div>
+        </div>
+        <div class="card">
+        Müller
+            <div class="comment">I still don't understand how he is world class, but he certainly is</div>
+        </div>
+        <div class="card">
+        Lewandowski
+            <div class="comment">5 minutes, 9 goals</div>
+        </div>
+        <div class="card">
+        Rakitic
+            <div class="comment">Incredible vision</div>
+        </div>
+        <div class="card">
+        Pogba
+            <div class="comment">Only player from another team than Barca and Real in the FIFA Top 11</div>
+        </div>
+        <div class="card">
+        Modric
+            <div class="comment">Croatian god</div>
+        </div>
+    </body>
+</html>

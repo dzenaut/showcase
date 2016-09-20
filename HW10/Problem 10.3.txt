@@ -1,0 +1,3 @@
+Problem 10.3
+
+sed -e 's/\([0-9]\) \(M\)/\1m/g' myfile.txt

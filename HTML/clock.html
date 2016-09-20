@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color:#808080;
+            }
+            span {
+                color:#712323;
+            }
+            div {
+                border:1px solid black;
+                width:60px;
+                color:#712323;
+            }
+        </style>
+        <script>
+            function updateClock() {
+            var currentTime = new Date();
+            document.getElementById("hours").innerHTML =
+            currentTime.getHours();
+            document.getElementById("minutes").innerHTML =
+            currentTime.getMinutes();
+            document.getElementById("seconds").innerHTML =
+            currentTime.getSeconds();
+        }
+        </script>
+    </head>
+    <body onload="updateClock(); setInterval('updateClock()', 1000 )">
+        <div><span id="hours"></span>:<span id="minutes"></span>:<span id="seconds"></span></div>
+    </body>
+</html>

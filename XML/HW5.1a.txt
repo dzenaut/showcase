@@ -1,0 +1,21 @@
+Calendar Description Language in XML
+
+The root element should be called "calendar". It uses the opening tag
+<calendar> and the closing tag </calendar>.
+
+The children of "calendar" should be called "event", with the opening tag
+<event> and the closing tag </event>. There will be AT LEAST ONE "event" element required in a calendar. "event" has a MANDATORY attribute "type", in which the type of the meeting is given, e.g. telefone conference, date, client meetings etc. This information is stored in an attribute and not in an element, because the nature of a meeting barely ever changes. Information that changes more frequently, like the time or the location of an event are supposed to be stored in elements, where they are more easily accessible.
+
+The "event" elements will have a MANDATORY child element "name" with the tags <name> and </name> that gives a concise name of the event.
+
+The "event" elements will have an OPTIONAL child element "description" with the tags <descripion> and </description> with text that gives detail about the meeting.
+
+The "event" elements will have a MANDATORY child element that will be called "time" with the tags <time> and </time>. Time itself will have the child elements "hour", that contains text that specifies the time (e.g. 7:00 PM), "date", that contains text that specifies the date (e.g. 21/3) and "year" that contains text that specifies the year (e.g. 2016). There will also be a child element "weekday" that specifies the weekday of an appointment (e.g. Monday).
+
+The "event" elements will have an OPTIONAL child element "endtime" with the tags <endtime> and </endtime> that will be structured just like the "time" elements described above.
+
+The "event" elements will have an OPTIONAL child element "frequency" that indicates the interval in which an event is repeated (if it is repeated).
+
+The "event" elements will have an OPTIONAL child element that will be called "attendees" with the tags <attendees> and </attendees>. The "attendees" elements will have child elements "person" with the tags <person> and </person> that will contain textual information about the attending people. There has to be AT LEAST ONE "person" element in a "attendees" element.
+
+The "event" elements will have an OPTIONAL child element "location" that contains text that describes the location of the event.
